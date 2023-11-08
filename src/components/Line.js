@@ -29,7 +29,7 @@ function Line() {
           {/* 条件に基づいて JSX を動的に構築 */}
           {uid === auth.currentUser.uid ? (
               <div className='flex sentRight'>
-                <div className='timeStampSent'><span>{createdAt.toDate().toLocaleString('ja-JP', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' })}</span></div>
+                <div className='timeStamp'>{createdAt.toDate().toLocaleString('ja-JP', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' })}</div>
                 <div className={`msg ${uid === auth.currentUser.uid ? "sent" : "received"}`}>
                 <p>{text}</p>
               </div>
@@ -40,7 +40,7 @@ function Line() {
               <div className={`msg ${uid === auth.currentUser.uid ? "sent" : "received"}`}>
                 <p>{text}</p>
               </div>
-              <div className='timeStampReceived'>{createdAt.toDate().toLocaleString('ja-JP', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' })}</div>
+              <div className='timeStamp'>{createdAt.toDate().toLocaleString('ja-JP', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric' })}</div>
             </div>
           )}
         </div>

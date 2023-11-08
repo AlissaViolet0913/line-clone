@@ -40,7 +40,7 @@ function SendMessage() {
                     marginBottom: "-3px",
                 }
             }
-                placeholder="メッセージを入力してください" type="text" onChange={(e)=> setMessage(e.target.value)} value={message}/>
+                placeholder="メッセージを入力" type="text" onChange={(e)=> setMessage(e.target.value)} value={message}/>
             <SendIcon />
         </div>
       </form>
