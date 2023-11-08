@@ -38,6 +38,7 @@ p {
   display: flex;
   padding: 20px 10px 0 20px;
   margin: 20px;
+  margin-left: 0;
   border-radius: 3000px;
   box-shadow: 0 0 10px rgb(164, 164, 164);
   align-items: center;
@@ -53,17 +54,9 @@ p {
   height: 10vh;
 }
 
-.timeStampReceived {
-  font-weight: 600;
-}
-
-.timeStampSent {
-  font-weight: 600;
-  display: inline-block;
-  background-color: pink;
-}
-.timeStampSent span {
-  background-color: yellow;
+.timeStamp {
+  font-weight: 500;
+  margin-top: 8vh;
 }
 
 .sent {
@@ -76,9 +69,9 @@ p {
 .sent:before {
   content: "";
   position: absolute;
-  bottom: 22px;
-  right: -14px;
-  margin-top: -15px;
+  bottom: 39px;
+  right: -1px;
+  margin-top: -10px;
   border: 30px solid transparent;
   border-left: 25px solid #85e14b;
   z-index: 0;
@@ -127,6 +120,7 @@ p {
   padding: 10px;
   padding-bottom: 20px;
   background-color: #fafafa;
+  height: 6vh;
 }
 
 .msgs {
